@@ -1,0 +1,271 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 240, 240);
+}
+
+.side-nav{
+    background-color: rgb(248, 240, 240);
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.side-nav-items{
+    color: white;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding-top: 50px;
+    outline: 0px solid rgb(248, 240, 240);
+    outline-offset: 0;
+    transition-duration: 360ms;
+    transition-timing-function: ease-in-out;
+    transition-property: width, background, background-size, outline, outline-offset;
+}
+
+.side-nav-items:hover{
+    width: 200%;
+    
+}
+
+.climate{
+    background: url('climate.jpg');
+    background-size: 100%;
+}
+
+.water{
+    background: url('water.jpg');
+    background-size: 100%;;
+}
+
+.plastic{
+    background: url('plastic.jpg');
+    background-size: 100%;
+}
+
+.pollution{
+    background: url('pollution.jpg');
+    background-size: 100%;   
+}
+
+.animals{
+    background: url('animals.jpg');
+    background-size: 100%;
+}
+
+.climate:hover{
+    background: url('climate-change.jpg');
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.water:hover{
+    background: url('water-change.jpg');
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.plastic:hover{
+    background: url('plastic-change.jpeg');
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.pollution:hover{
+    background: url('pollution-change.jpg');
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.animals:hover{
+    background: url('animals-change.jpg');
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.side-nav-right{
+    background-color: rgb(248, 240, 240);
+    width: 20%;
+    height: 100%;
+    float: right;
+    direction: rtl;
+}
+
+.side-nav-right > * {
+    direction: ltr;
+  }
+
+.content{
+      width: 55%;
+      height: 100%;
+      margin: 0 auto;
+  }
+
+  .content h1, h3{
+      text-align: center;
+      color: darkslateblue;
+      text-transform: uppercase;
+      margin-top: 0;
+  }
+
+  .problems{
+      margin-top: 3em;
+      text-align: left;
+      color: darkslateblue;
+  }
+
+  .solutions{
+    margin-top: 3em;
+      text-align: right;
+      color: darkslateblue;
+  }
+
+  .solutions p, .problems p{
+      opacity: 0;
+  }
+
+  .problems p:nth-child(1), .solutions p:nth-child(1){
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+  .problems p:nth-child(2), .solutions p:nth-child(2){
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+  .problems p:nth-child(3), .solutions p:nth-child(3){
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+  .problems p:nth-child(4), .solutions p:nth-child(4){
+    animation-name: fadein;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+  @media screen and (max-width: 780px){
+      .side-nav-items{
+          font-size: 0.6em;
+      }
+      .climate{
+        background: url('climate.jpg');
+        background-size: auto 100%;
+    }
+    
+    .water{
+        background: url('water.jpg');
+        background-size: auto 100%;;
+    }
+    
+    .plastic{
+        background: url('plastic.jpg');
+        background-size: auto 100%;
+    }
+    
+    .pollution{
+        background: url('pollution.jpg');
+        background-size: auto 100%;   
+    }
+    
+    .animals{
+        background: url('animals.jpg');
+        background-size: auto 100%;
+    }
+
+    .climate:hover{
+        background: url('climate-change.jpg');
+        background-size: auto 100%;
+        object-fit: cover;
+    }
+    
+    .water:hover{
+        background: url('water-change.jpg');
+        background-size: auto 100%;
+        object-fit: cover;
+    }
+    
+    .plastic:hover{
+        background: url('plastic-change.jpeg');
+        background-size: auto 100%;
+        object-fit: cover;
+    }
+    
+    .pollution:hover{
+        background: url('pollution-change.jpg');
+        background-size: auto 100%;
+        object-fit: cover;
+    }
+    
+    .animals:hover{
+        background: url('animals-change.jpg');
+        background-size: auto 100%;
+        object-fit: cover;
+    }
+
+    .content h1{
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    .content h3{
+        font-size: 1em;
+    }
+
+    .problems{
+        font-size: 0.7em;
+        padding-left: 0.7em;
+    }
+    
+    .solutions{
+        font-size: 0.7em;
+        padding-right: 0.7em;
+    }
+  }
